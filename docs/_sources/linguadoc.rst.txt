@@ -1,0 +1,29 @@
+linguadoc package
+=================
+
+Submodules
+----------
+
+linguadoc.gen\_doc module
+-------------------------
+
+.. automodule:: linguadoc.gen_doc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+linguadoc.lib module
+--------------------
+
+.. automodule:: linguadoc.lib
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: linguadoc
+   :members:
+   :undoc-members:
+   :show-inheritance:

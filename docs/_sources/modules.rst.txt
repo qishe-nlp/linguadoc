@@ -1,0 +1,7 @@
+linguadoc
+=========
+
+.. toctree::
+   :maxdepth: 4
+
+   linguadoc
