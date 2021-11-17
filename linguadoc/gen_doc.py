@@ -16,9 +16,10 @@ class LinguaDoc:
     """
 
     self.lang = lang
-    _template_dir = os.path.dirname(__file__)
+    _template_dir = os.path.dirname(__file__) + '/' + lang
     self.template = os.path.join(_template_dir, lang+'_template.docx')
-    self.back_cover = os.path.join(_template_dir, 'back_cover.png')
+    self.cover = os.path.join(_template_dir, lang+'_doc_cover.jpg')
+    self.end = os.path.join(_template_dir, lang+'_doc_end.jpg')
     self.jsonfile = jsonfile
     self.data = read_json(self.jsonfile)
 
@@ -34,6 +35,8 @@ class LinguaDoc:
     document.add_paragraph(title, style='Subtitle')
     created_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     document.add_paragraph('歧舌-'+created_time, style='Quote')
+    document.add_picture(self.cover, width=Cm(15.24))
+    document.add_page_break()
 
     for s in self.data:
       sentence = s["sentence"]
@@ -54,7 +57,7 @@ class LinguaDoc:
         for v in value: 
           p = document.add_paragraph("{}    {}".format(key, v["text"]), style='List Bullet')
 
-    document.add_picture(self.back_cover, width=Cm(15.24))
+    document.add_picture(self.end, width=Cm(15.24))
 
     document.save(output)
 
