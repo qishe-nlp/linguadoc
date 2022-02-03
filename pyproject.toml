@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linguadoc"
-version = "0.1.3"
+version = "0.1.4"
 description = "DOC generator for language learning"
 authors = ["Phoenix Grey <phoenix.grey0108@gmail.com>"]
 repository = "https://github.com/qishe-nlp/linguadoc"
