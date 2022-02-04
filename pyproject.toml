@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linguadoc"
-version = "0.1.4"
+version = "0.1.5"
 description = "DOC generator for language learning"
 authors = ["Phoenix Grey <phoenix.grey0108@gmail.com>"]
 repository = "https://github.com/qishe-nlp/linguadoc"
@@ -11,7 +11,7 @@ keywords = ["doc", "language", "auto"]
 [tool.poetry.dependencies]
 python = "^3.8"
 python-docx = "^0.8.11"
-click = "^7.1.2"
+click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
